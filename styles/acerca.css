@@ -1,0 +1,55 @@
+.acercaContainer {
+    padding-left:10%;
+    padding-right:10%;
+}
+.acercaContainer h1 {
+    font-size:8vw; 
+    -webkit-text-stroke: 1px black;
+    color: transparent;
+    position: relative;
+    display: inline-block;
+    white-space:nowrap;
+    margin-bottom:2rem;
+    margin-top:5rem;
+}
+.acercaContainer h1::before {
+    content: attr(data-fill);
+    position: absolute;
+    color:#6441a5;
+    top:-1px;
+    left:5px;
+}
+.acercaContainer p {
+    font-size:1.34vw;
+    line-height: 1.1;
+    margin-top:.5rem;
+}
+.mainContainer {
+    margin-top:2.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.textContainer {
+    grid-column:1 / 2;
+}
+.mainContainer img {
+    grid-column:2 / 3;
+    width:60%;
+    height:100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;;
+}
+.acercaContainer h3 {
+    font-size:2.5vw;
+    margin-top:2rem;
+    margin-bottom:1rem;
+    font-weight: 400;
+}
+.textContainer ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.textContainer li {
+    font-size:1rem;
+    line-height: 1.1;
+    margin-top:.8rem;
+}

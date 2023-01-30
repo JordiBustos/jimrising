@@ -1,0 +1,35 @@
+.ticker {
+    position: relative;
+    width:100%;
+    margin-top:10rem;
+}
+.ticker .scroll {
+    width:105vw;
+    display: flex;
+    background-color: #6441a5;
+    overflow: hidden;
+}
+.ticker .scroll div {
+    padding:3rem;
+    color: #fff;
+    font-size:4rem;
+    background:#6441a5;
+    white-space: nowrap;
+    font-weight: bold;
+    animation: ticker 40s linear infinite;
+    animation-delay: -20s;
+    transform: translateX(100%);
+}
+.ticker .scroll div span {
+    -webkit-text-stroke: 2px white;
+    color: transparent;
+    margin-left:1rem;
+    margin-right:1rem;
+}
+.ticker .scroll.ticker-1 {
+    transform: rotate(13deg) translateY(110px) translateX(-22px);
+}
+@keyframes ticker {
+    0% { transform: translateX(100); }
+    100% { transform: translateX(-100%); }
+}

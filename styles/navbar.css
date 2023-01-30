@@ -1,0 +1,63 @@
+.navbar,
+.linksVertical {
+    z-index: 999;
+    font-family: "Open Sans", sans-serif;
+}
+.navbar {
+    width:100vw;
+    background: linear-gradient(180deg,#fff,hsla(0,0%,100%,0));
+    position:fixed;
+}
+.links {
+    display:flex;
+    flex-direction: row;
+    max-width:20vw;
+    margin-left:8.5%;
+    margin-top:2%;
+}
+.links a {
+    flex-basis:30%;
+    margin-left:.8rem;
+    color: #181817;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    opacity: 1 !important;
+    transition: 0.3s;
+}
+.links a:nth-child(2) {
+    margin-left:1.5rem;
+}
+.links a:hover {
+    text-decoration: underline;
+    color:#6441a5;
+}
+.navbarVertical {
+    margin-left:1%;
+}
+.linksVertical {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:100vh;
+    position:fixed;
+    width:10vw;
+}
+.navbarVertical img {
+    border-radius:100%;
+    margin-top:1rem;
+}
+.navbarVertical a {
+    margin-bottom:2rem;
+    color: #181817;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-bottom:10px;
+}
+.navbarVertical a:hover {
+    color:#6441a5;
+}
+.donationContainer {
+    display:flex;
+    flex-direction: column;
+}
